@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "start": "run-p dev start:*",
+    "build": "snowpack build",
+    "test": "jest",
+    "dev": "snowpack dev",
+    "start:firebase": "firebase emulators:start",
+    "start:functions": "npm run watch --prefix functions"
+  },
+  "dependencies": {
+    "svelte": "^3.21.0"
+  },
+  "devDependencies": {
+    "@snowpack/app-scripts-svelte": "^1.2.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/svelte": "^3.0.0",
+    "firebase": "^7.15.1",
+    "jest": "^25.4.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "prettier-plugin-svelte": "^1.1.0",
+    "snowpack": "^2.5.0"
+  }
+}
